@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 2</title>
+    <!-- Tambahkan link untuk FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: white;
+            padding: 20px;
+            overflow: auto;
+            background: linear-gradient(to bottom, #4A148C, #7B1FA2);
+            background-size: 200% 200%;
+            animation: changeBackground 20s infinite alternate;
+        }
+        @keyframes changeBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+        .content {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 20px 1fr;
+            grid-gap: 20px;
+            align-items: center;
+        }
+        .quote {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+        }
+        .quote img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            transition: transform 0.5s ease;
+        }
+        .quote:hover img {
+            transform: scale(1.05);
+        }
+        .quote p {
+            margin: 0;
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        .quote h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .connector {
+            width: 2px;
+            height: 100%;
+            background-color: white;
+            grid-column: 2 / 3;
+            justify-self: center;
+        }
+        .icon {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .next-button {
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            background: #E91E63;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 24px;
+            margin-top: 20px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .next-button:hover {
+            background: #ad1457;
+        }
+        .next-icon {
+            margin-left: 5px;
+        }
+        /* Animasi Balon dan Bunga */
+        .balloon, .flower {
+            position: absolute;
+            font-size: 24px;
+            animation: balloonUp 5s linear;
+            z-index: 10;
+        }
+        @keyframes balloonUp {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(0, -1000px);
+            }
+        }
+        /* Responsif untuk layar kecil */
+        @media only screen and (max-width: 600px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            .connector {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Kata Sambutan -->
+        <div class="quote" data-aos="fade-up">
+            <h2>Hallo Sayang Selamat Datang di Halaman ke dua 🤗😇</h2>
+            <p>Di halaman ini saya menaruh kata-kata ucapan selamat ulang tahun buat pacar saya dan sedikit kata-kata buat kamu 😁😁.</p>
+        </div>
+        <!-- Gambar dan Kata Mutiara 1 -->
+        <div class="quote" data-aos="fade-up">
+            <img src="G4.jpeg" onclick="showCelebration(this)">
+            <span class="icon">🎂</span>
+            <p>Sayangku, selamat ulang tahun! 🎉 Di hari istimewa ini, aku ingin mengucapkan terima kasih atas semua kebahagiaan yang kau bawa dalam hidupku. Setiap momen bersamamu adalah anugerah, dan aku bersyukur bisa berbagi cinta dan tawa denganmu.</p>
+            <p>Semoga di tahun yang baru ini, semua impian dan harapanmu terwujud. Aku akan selalu mendukungmu dalam setiap langkah yang kau ambil. Kamu adalah segalanya bagiku, dan aku mencintaimu lebih dari kata-kata yang bisa ungkapkan. Selamat merayakan hari lahirmu, cintaku. Mari kita buat kenangan indah bersama!</p>
+        </div>
+        <div class="quote" data-aos="fade-up">
+            <img src="G5.jpeg" onclick="showCelebration(this)">
+            <span class="icon">🎈</span>
+            <p>Hari ini adalah awal dari petualangan baru dalam hidupmu. Jangan pernah merasa mudah menyerah, karena setiap langkah yang kamu ambil membawamu lebih dekat pada impianmu. Jadikan tahun ini sebagai momentum untuk menggali potensimu secara maksimal. Ingatlah, bahwa setiap tantangan adalah kesempatan untuk tumbuh dan berkembang. </p>
+            <p>Aku yakin kamu memiliki kekuatan dan keteguhan untuk menghadapi apapun yang datang. Mari berjuang bersama menuju masa depan yang cerah dan penuh prestasi. Selamat merayakan hari ulang tahunmu, semoga tahun ini menjadi awal yang indah untuk semua hal yang besar yang menantimu!</p>
+        </div>
+        <div class="quote" data-aos="fade-up">
+            <img src="G1.jpeg" onclick="showCelebration(this)">
+            <span class="icon">🎂</span>
+            <p>Sayangku tercinta,</p>
+            <p>Hari ini, aku ingin mengingatkanmu betapa luar biasanya kamu. Setiap langkah yang telah kamu ambil, setiap tantangan yang telah kamu hadapi - semuanya membuktikan betapa kuatnya kamu. Jangan biarkan kegagalan atau kesulitan membuatmu meragukan dirimu sendiri. Ingatlah, di balik setiap tantangan ada peluang untuk belajar dan tumbuh.</p>
+        </div>
+        <div class="quote" data-aos="fade-up">
+            <img src="gambar2.jpeg" onclick="showCelebration(this)">
+            <span class="icon">🎈</span>
+            <p>Sayang,</p>
+            <p>Hari ini, di hari istimewamu, aku ingin mengungkapkan betapa dalamnya rasa sayangku padamu. Maafkan aku karena kali ini aku tidak bisa memberikanmu kado seperti yang mungkin kamu harapkan. Namun, yang ingin aku berikan adalah cinta yang tulus dan penghargaan yang tak terhingga atas segala yang kamu berikan dalam hidupku.</p>
+            <p>Setiap hari bersamamu adalah hadiah yang berharga bagi hatiku. Kamu adalah sumber kebahagiaan, kekuatan, dan inspirasiku. Terima kasih atas semua momen indah yang kita lewati bersama, yang tak pernah bisa aku lupakan. Semoga hari ulang tahunmu penuh dengan kebahagiaan dan cinta.</p>
+        </div>
+        <!-- Doa -->
+        <div class="quote" data-aos="fade-up" style="text-align: center; margin-top: 50px;">
+            <h2>Doa buat kamu</h2>
+            <p>Semoga kamu diberkati di hari ulang tahunmu ini. Semoga Tuhan selalu memberikan perlindungan, kebahagiaan, dan kesuksesan dalam hidupmu 🙏.</p>
+            <br>
+            <p>Om Shri Ganeshaya Namah.</p>
+            <p>Om Shri Ganeshaya Namah.</p>
+            <p>Om Shri Ganeshaya Namah.</p>
+        </div>
+        <!-- Tombol Next dengan FontAwesome -->
+        <div style="text-align: center; margin-top: 20px;">
+            <a href ="page3.html" class="next-button">Moment<i class="fas fa-arrow-right next-icon"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Tambahkan script untuk FontAwesome -->
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+                    <script>
+                        // Inisialisasi AOS untuk animasi saat di-scroll
+                        AOS.init({
+                            duration: 1000, // Durasi animasi 1 detik
+                            once: true // Animasi hanya terjadi satu kali saat scroll
+                        });
+
+                        /// Ambil semua elemen gambar
+                        const images = document.querySelectorAll('.quote img');
+
+                        // Tambahkan event listener untuk setiap gambar
+                        images.forEach(img => {
+                            img.addEventListener('click', function() {
+                                showCelebration(img);
+                            });
+                        });
+
+                        // Fungsi untuk menampilkan animasi balon dan bunga saat gambar diklik
+                        function showCelebration(img) {
+                            const balloon = document.createElement('span');
+                            balloon.innerHTML = '🎈','❤️';
+                            balloon.classList.add('balloon','love');
+                            balloon.style.left = `${img.offsetLeft + (img.width / 2) - 10}px`; // Letak horizontal tengah gambar
+                            balloon.style.top = `${img.offsetTop + (img.height / 2) - 10}px`; // Letak vertikal tengah gambar
+                            img.parentNode.appendChild(balloon);
+
+                            const flower = document.createElement('span');
+                            flower.innerHTML = '💐','❤️';
+                            flower.classList.add('flower','love');
+                            flower.style.left = `${img.offsetLeft + (img.width / 2) - 10}px`; // Letak horizontal tengah gambar
+                            flower.style.top = `${img.offsetTop + (img.height / 2) - 10}px`; // Letak vertikal tengah gambar
+                            img.parentNode.appendChild(flower);
+
+                            // Hapus elemen balon dan bunga setelah animasi selesai
+                            setTimeout(() => {
+                                balloon.remove();
+                                flower.remove();
+                            }, 5000); // Ubah angka 5000 sesuai dengan durasi animasi balon dan bunga
+                        }
+
+                    </script>
+                    <!-- Animasi Bergerak Latar Belakang -->
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            // Ambil elemen body
+                            const body = document.querySelector('body');
+
+                            // Animasi latar belakang
+                            let step = 0;
+                            const gradientColors = ['#4A148C', '#7B1FA2', '#9C27B0', '#E91E63', '#FF9800'];
+
+                            function changeBackground() {
+                                if (step === gradientColors.length) {
+                                    step = 0;
+                                }
+                                body.style.transition = 'background-color 5s ease';
+                                body.style.backgroundColor = gradientColors[step];
+                                step++;
+                            }
+
+                            // Panggil fungsi animasi setiap 5 detik
+                            setInterval(changeBackground, 5000);
+                        });
+                    </script>
+                </body>
+                </html>
+
